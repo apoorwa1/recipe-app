@@ -62,6 +62,7 @@ const RecipeSearch = () => {
   }
   useEffect(() => {
     getRecipe();
+    // eslint-disable-next-line
   }, [input]);
 
   function onChange(e) {
