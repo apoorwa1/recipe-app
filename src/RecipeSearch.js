@@ -50,7 +50,7 @@ const RecipeSearch = () => {
   const [search, setSearch] = useState("");
   const [input, setInput] = useState("garlic bread");
   const APP_ID = "d0a53431";
-  const APP_KEY = "55e02304fa052b072bdcc106cc075371";
+  const APP_KEY = process.env.REACT_APP_TOKEN;
   const APP_URL = `https://api.edamam.com/search?q=${input}&app_id=${APP_ID}&app_key=${APP_KEY}`;
   console.log(APP_URL);
 
